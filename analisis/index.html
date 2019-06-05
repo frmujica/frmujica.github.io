@@ -4,63 +4,198 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    
   <!-- PAGE settings -->
-  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
-  <title>Conference Aquamarine - Pingendo template</title>
-  <meta name="description" content="Free Bootstrap 4 Pingendo Aquamarine template for unique events.">
-  <meta name="keywords" content="Pingendo conference event aquamarine free template bootstrap 4">
+  <link rel="icon" href="img/tfm.png">
+  <title>TFM - Edicion 12</title>
+  <meta name="description" content="TFM Edicion 12">
+  
   <!-- CSS dependencies -->
-  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="js/navbar-ontop.js"></script>
-  <!-- Script: Animated entrance -->
-  <script src="js/animate-in.js"></script>
-</head>
+  <script src="js/jquery-3.4.1.min.js"></script>
 
-<body class="text-center">
-  <!-- Navbar -->
-  <!-- Cover -->
-  <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(&quot;assets/conference/cover.jpg&quot;);">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-2 d-none d-md-block">Conference Pingendo</h1>
-          <h1 class="display-4 d-block d-md-none">Conference Pingendo</h1>
-          <p class="">December 12-14, NYC </p>
-          <a href="#register" class="btn btn-lg mt-4 btn-outline-light">Register now</a><i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+    <style>
+        
+        .ocultar{ display: none; }
+        
+        @media (max-width: 991px) {
+            .ocultar-xs { display: none; }
+            .ocultar{ display: block; }
+        }
+        
+    </style>
+</head>
+    
+<body style="background-color:#EFEFEF;">
+    
+    <h1 style="text-align: center; color: #555555; padding-top: 5%; padding-bottom: 5%;">TFM - Edicion 12</h1>
+
+    <div class="col-xs-12" style="padding-left: 15px;">
+        
+        <div class="menu_bar ocultar">
+	       <a href="#" class="bt-menu">
+               <img src="img/menu.png">
+            </a>
         </div>
-      </div>
+ 
+        <nav class="ocultar" style="display: none">
+           <ul>
+              <li onclick="mostrar('grafico1')"><a href="#"><span class="icon-house"></span>ENVIOS POR AÑO Y PAIS</a></li>
+              <li onclick="mostrar('grafico2')"><a href="#"><span class="icon-suitcase"></span>DISTRIBUCION DE ENVIOS POR REGION</a></li>
+              <li onclick="mostrar('grafico3')"><a href="#"><span class="icon-rocket"></span>COMPARATIVA DE ENVIOS POR AÑO Y PAIS</a></li>
+            </ul>
+        </nav>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">2007 es el año del cambio</h5>
-              <p class="card-text">El número de busquedas se multiplica por dos a partir de ese año</p>
+    
+    
+    
+    <div class="col-sm-12"><br></div>
+    
+    <div class="col-sm-12 align-middle ocultar-xs" style="background-color: #555555; padding-top: 5px; padding-bottom: 5px; height: auto;">
+        
+        <div class="row">
+            
+            <div class="col-sm-1" style=""></div>
+            
+            <div class="col-sm-2 align-middle btn btn-primary" style="white-space: normal;" onclick="mostrar('grafico1')">
+                ENVIOS POR AÑO Y PAIS
             </div>
-            <iframe src="yearline.html" style="border:none; width:auto; height:400"></iframe>
-          </div>
+
+            <div class="col-sm-2"></div>
+            
+            <div class="col-sm-2 align-middle btn btn-primary" style="white-space: normal;" onclick="mostrar('grafico2')">
+                DISTRIBUCION DE ENVIOS POR REGION
+            </div>
+
+            <div class="col-sm-2"></div>
+            
+            <div class="col-sm-2 align-middle btn btn-primary" style="white-space: normal; " onclick="mostrar('grafico3')">
+                COMPARATIVA DE ENVIOS POR AÑO Y PAIS
+            </div>
+            
+            <div class="col-sm-1"></div>
+            
         </div>
-      </div>
     </div>
-  </div>
-  <!-- Parallax section -->
-  <!-- Speakers -->
-  <!-- Schedule -->
-  <!-- Sponsor logos -->
-  <!-- Call to action -->
-  <!-- Footer -->
-  <!-- JavaScript dependencies -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- Script: Smooth scrolling between anchors in the same page -->
-  <script src="js/smooth-scroll.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+    
+    <div class="col-xs-12"><br></div>
+    
+    <div class="col-xs-12" id="grafico1">
+        
+        
+        <iframe src="grafico1.html" class="col-md-6 col-xs-12" style="height: 800px; display: inline-block"></iframe>
+        
+        <pre class="col-md-5 col-xs-12" style="display: inline-block; vertical-align: top">
+            
+            import pandas as pd
+            import altair as alt
+            
+            # indicamos a altair que lo vamos a usar en un notebook
+            alt.renderers.enable("notebook")
+
+            df = pd.read_csv("prediccion_U_todos_los_paises_COLS.csv")
+            df = df.tail(5000)
+            
+            # TOTAL ENVIOS POR AÑO-MES
+            envios_por_ano = alt.Chart(df).mark_area().encode(x="yearmonth(ds):T", 
+                                                                  y="sum(yhat)", 
+                                                                  tooltip="sum(yhat)",
+                                                                  color='prediccion'
+                                                                 ).properties(title='Envios Por Año',width=700)
+        </pre>
+            
+    </div>
+    
+    
+    
+    <div class="col-xs-12" id="grafico2" style="display: none">
+        
+        <iframe src="grafico2.html" class="col-md-6 col-xs-12" style="height: 800px; display: inline-block"></iframe>
+        
+        <pre class="col-md-5 col-xs-12" style="display: inline-block; vertical-align: top">
+            
+            import pandas as pd
+            import altair as alt
+            
+            # indicamos a altair que lo vamos a usar en un notebook
+            alt.renderers.enable("notebook")
+
+            df = pd.read_csv("prediccion_U_todos_los_paises_COLS.csv")
+            df = df.tail(5000)
+            
+            # TOTAL ENVIOS POR AÑO-MES
+            envios_por_ano = alt.Chart(df).mark_area().encode(x="yearmonth(ds):T", 
+                                                                  y="sum(yhat)", 
+                                                                  tooltip="sum(yhat)",
+                                                                  color='prediccion'
+                                                                 ).properties(title='Envios Por Año',width=700)
+        </pre>
+            
+    </div>
+    
+    <div class="col-xs-12" id="grafico3" style="display: none">
+        
+        <iframe src="grafico3.html" class="col-md-6 col-xs-12" style="height: 800px; display: inline-block"></iframe>
+        
+        <pre class="col-md-5 col-xs-12" style="display: inline-block; vertical-align: top">
+            
+            import pandas as pd
+            import altair as alt
+            
+            # indicamos a altair que lo vamos a usar en un notebook
+            alt.renderers.enable("notebook")
+
+            df = pd.read_csv("prediccion_U_todos_los_paises_COLS.csv")
+            df = df.tail(5000)
+            
+            # Envios por pais y año
+            c = alt.Chart(df).mark_bar(size=10).encode(x="pais", 
+                                           y="mean(yhat)", 
+                                           #row="pais",
+                                           column="year(ds):T",
+                                           row='site:N',
+                                           color='prediccion').properties(title='Envios por Pais/Año',width=250)
+        </pre>
+            
+    </div>
+    
 </body>
+
+<script>
+
+    menu_visible = 1;
+    
+    function mostrar(id_grafico){
+        $("#grafico1").hide(150);
+        $("#grafico2").hide(150);
+        $("#grafico3").hide(150);
+        
+        $("#" + id_grafico).show(150);
+        
+        menu_visible = 1;
+        $('nav').hide(250);
+    }
+    
+    $( document ).ready(function() {
+        
+        $('.menu_bar').click(function(){
+
+            if(menu_visible == 1){
+                 $('nav').show(250);
+			     menu_visible = 0;
+		    } else {
+			     menu_visible = 1;
+                 $('nav').hide(250);            
+		    } 
+
+	     });
+        
+    });
+    
+</script>
+    
 
 </html>
